@@ -3,9 +3,7 @@ import React, { Component } from "react";
 import Header from "./Header";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Cards from "./Cards";
-// import Spotify from "./Spotify"
 import Chats from "./Chats";
-import Chat from "./Chat";
 import ChatScreen from "./ChatScreen";
 import database from "./firebase";
 import Profile from "./Profile";
@@ -29,7 +27,7 @@ class App extends Component {
     .collection("People")
     .onSnapshot((snapshot) => {
       snapshot.docs.map((doc) => {
-        if (this.state.id == doc.id) {
+        if (this.state.id === doc.id) {
           this.setState(doc.data());
         }
       })

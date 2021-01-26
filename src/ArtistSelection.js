@@ -4,10 +4,8 @@ import axios from "axios";
 class Artist extends React.Component {
   constructor(props) {
     super(props);
-    // this.state = { value: "", artist: "", submit: "" };
+    this.state = { value: "", artist: "", submit: "" };
   }
-
-  
 
   render() {
 

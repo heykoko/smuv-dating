@@ -1,4 +1,3 @@
-import { Card } from "@material-ui/core";
 import React, { useState, useEffect } from "react";
 import TinderCard from "react-tinder-card";
 import database from "./firebase";
@@ -23,12 +22,12 @@ function Cards(props) {
   console.log(props);
 
   const onSwipe = (direction) => {
-    if (direction == "right") {
+    if (direction === "right") {
         console.log(props.user.matches)
         console.log(people[1].id)
-        // var new_list = people[0].id
-        // props.user.setState({ matches: new_list });
-        // database.collection("People").doc(props.user.matches).update({matches: new_list});
+        var new_list = people[0].id
+        props.user.setState({ matches: new_list });
+        database.collection("People").doc(props.user.matches).update({matches: new_list});
     } else console.log("boo");
   };
 
