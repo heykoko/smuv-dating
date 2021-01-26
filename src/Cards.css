@@ -1,0 +1,32 @@
+.card {
+    position: relative;
+    padding: 20px;
+    width: 600px;
+    max-width: 85vw;
+    height: 50vh;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center; 
+
+
+}
+
+.card > h3 {
+    position: absolute;
+    bottom: 10px;
+    font-size: 30px;
+    color: white;
+}
+
+.cardContainer {
+    display:flex;
+    justify-content: center;
+}
+
+.swipe {
+    position: absolute;
+}
+
+.profileDetails {
+    background-color: white;
+}

@@ -1,0 +1,19 @@
+.profileImage {
+    position: relative;
+    padding: 20px;
+    width: 600px;
+    max-width: 85vw;
+    height: 50vh;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center; 
+
+
+}
+
+.profileImage > h3 {
+    position: absolute;
+    bottom: 10px;
+    font-size: 30px;
+    color: white;
+}
